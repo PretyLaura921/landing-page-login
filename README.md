@@ -7,3 +7,5 @@ Prety Laura - NIM 2401091032
 docker build -t USERNAME/landing-page-login-prety .
 docker run -d -p 8080:80 USERNAME/landing-page-login-prety
 Buka http://localhost:8080
+
+Docker Hub: https://hub.docker.com/r/prety1032/landing-page-login-prety
