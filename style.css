@@ -1,0 +1,102 @@
+﻿:root {
+  --ink: #0f1b33;
+  --sky: #e6eef8;
+  --pink: #fcd5e3;
+  --pink-dark: #f8bcd2;
+  --blue: #a8c8f0;
+  --line: #c9d6e8;
+  --muted: #51607a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Figtree", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--sky);
+  line-height: 1.6;
+}
+header, main, footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 20px 24px;
+}
+header h2 {
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+}
+main {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+}
+main p { color: var(--muted); font-size: 1.1rem; }
+#akun {
+  background: #fff;
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  padding: 28px;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin: 14px 0 6px;
+}
+input {
+  width: 100%;
+  font: inherit;
+  padding: 11px 12px;
+  border: 2px solid var(--line);
+}
+input:focus { outline: 3px solid var(--blue); border-color: var(--ink); }
+button {
+  width: 100%;
+  margin-top: 20px;
+  font: inherit;
+  font-weight: 700;
+  padding: 13px;
+  border: 2px solid var(--ink);
+  background: var(--pink);
+  color: var(--ink);
+  cursor: pointer;
+}
+button:hover { background: var(--pink-dark); }
+footer { color: var(--muted); font-size: 0.9rem; }
+
+form { display: none; }
+form.active { display: block; }
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid var(--ink);
+  margin-bottom: 8px;
+}
+.tabs button {
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+.tabs button:hover { background: var(--blue); }
+.tabs button.active,
+.tabs button.active:hover {
+  background: var(--ink);
+  color: #fff;
+}
+.msg { min-height: 1.5em; margin: 14px 0 0; font-size: 0.95rem; font-weight: 500; }
+
+@media (max-width: 820px) {
+  main { grid-template-columns: 1fr; gap: 32px; }
+}
+
+
+
+.msg.error { color: #b3261e; }
+.msg.ok { color: #1b6b3a; }

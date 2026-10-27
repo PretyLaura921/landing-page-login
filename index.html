@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>Prety Laura</h2>
+  </header>
+
+  <main>
+    <section>
+      <h1>Satu akun untuk semua yang kamu butuhkan.</h1>
+      <p>Daftar dalam hitungan detik, lalu masuk kapan saja.</p>
+    </section>
+
+    <section id="akun">
+      <div class="tabs"><button type="button" id="tab-login" class="active">Masuk</button><button type="button" id="tab-register">Daftar</button></div>
+      <form id="form-login" class="active">
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" placeholder="nama@email.com" required>
+
+        <label for="login-pass">Password</label>
+        <input id="login-pass" type="password" required>
+
+        <button type="submit">Masuk</button><p class="msg" id="msg-login"></p>
+      </form>
+
+      
+      <form id="form-register">
+        <label for="reg-name">Nama lengkap</label>
+        <input id="reg-name" type="text" required>
+
+        <label for="reg-email">Email</label>
+        <input id="reg-email" type="email" required>
+
+        <label for="reg-pass">Password</label>
+        <input id="reg-pass" type="password" required>
+
+        <label for="reg-pass2">Ulangi password</label>
+        <input id="reg-pass2" type="password" required>
+
+        <button type="submit">Buat akun</button><p class="msg" id="msg-register"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Prety Laura - NIM 2401091032 | Latihan Docker dan Web Development</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
